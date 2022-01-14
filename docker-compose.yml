@@ -3,7 +3,7 @@ services:
   strip_logger:
     build: .
     env_file:
-    - .env
+      - .env
     container_name: stripLogger-container
     restart: always
     network_mode: host
