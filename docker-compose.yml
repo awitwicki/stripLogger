@@ -1,0 +1,9 @@
+version: "3.3"
+services:
+  strip_logger:
+    build: .
+    env_file:
+    - .env
+    container_name: stripLogger-container
+    restart: always
+    network_mode: host
